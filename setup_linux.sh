@@ -16,6 +16,10 @@ sudo apt-get update
 
 install_package "build-essential"
 install_package "cmake"
-install_package "terminator"
-install_package "vim"
 install_package "git"
+
+install_package "terminator"
+sudo update-alternatives --config x-terminal-emulator
+
+install_package "vim"
+sudo update-alternatives --config editor
