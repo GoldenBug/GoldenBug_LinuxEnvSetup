@@ -10,6 +10,11 @@ function install_package() {
 	fi
 }
 
+if [ "$EUID" -ne 0 ]
+  then echo "This probably won't succeed if not run as root ¯\\_(ツ)_/¯"
+  read -p "Press enter to continue anyway..."
+fi
+
 add-apt-repository ppa:gnome-terminator
 
 sudo apt-get update
