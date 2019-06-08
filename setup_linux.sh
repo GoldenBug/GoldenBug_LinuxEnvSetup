@@ -17,7 +17,7 @@ fi
 
 add-apt-repository ppa:gnome-terminator
 
-sudo apt-get update
+apt-get update
 
 install_package "build-essential"
 install_package "cmake"
