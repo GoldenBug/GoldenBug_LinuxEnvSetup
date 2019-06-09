@@ -22,6 +22,7 @@ apt-get update
 install_package "build-essential"
 install_package "cmake"
 install_package "git"
+install_package "astyle"
 
 install_package "terminator"
 sudo update-alternatives --config x-terminal-emulator
